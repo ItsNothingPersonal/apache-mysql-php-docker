@@ -6,7 +6,7 @@ services:
       context: './build/php'
       args:
         - MYSQL_DATABASE=${MYSQL_DATABASE}
-        - MYSQL_ROOT_PASSWORD=${MYSQL_PASSWORD}
+        - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
@@ -19,7 +19,7 @@ services:
       context: './build/mysql'
       args:
         - MYSQL_DATABASE=${MYSQL_DATABASE}
-        - MYSQL_ROOT_PASSWORD=${MYSQL_PASSWORD}
+        - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
     environment:
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
       MYSQL_DATABASE: ${MYSQL_DATABASE}
